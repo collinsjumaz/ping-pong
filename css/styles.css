@@ -3,7 +3,7 @@ html {
 margin:0;
 padding:0;
 color:#000;
-background:#a7a09a;
+background:#a7a09b;
 }
 #wrap {
 width:auto;
@@ -27,7 +27,6 @@ margin:0;
 padding:0;
 }
 #main {
-  color:#ca93f9;
   float:left;
   width:400px;
     height: 100vh;
