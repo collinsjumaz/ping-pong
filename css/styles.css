@@ -6,11 +6,13 @@ color:#000;
 background:#a7a09a;
 }
 #wrap {
-width:750px;
+width:auto;
 margin:0 auto;
 background:#99c;
 }
 #header {
+  color:white;
+  text-align: center;
 background:#96274a;
 }
 #nav ul{
@@ -25,16 +27,22 @@ margin:0;
 padding:0;
 }
 #main {
+  color:#ca93f9;
   float:left;
-  width:250px;
+  width:400px;
+    height: 100vh;
   background:#22d6cd;
 }
 #sidebar {
   float:right;
-  width:250px;
+  width:900px;
+  height: 100vh;
   background:#89f442;
 }
 #footer {
   clear:both;
+  height: auto;
+  color: white;
+  text-align: center;
   background:#274196;
 }
