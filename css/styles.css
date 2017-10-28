@@ -29,18 +29,18 @@ padding:0;
 #main {
   float:left;
   width:400px;
-    height: 100vh;
+    height: auto;
   background:#22d6cd;
 }
 #sidebar {
   float:right;
   width:900px;
-  height: 100vh;
+  height: auto;
   background:#89f442;
 }
 #footer {
   clear:both;
-  height: auto;
+  height: 100px;
   color: white;
   text-align: center;
   background:#274196;
