@@ -47,3 +47,9 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
