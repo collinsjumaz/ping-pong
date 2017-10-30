@@ -31,6 +31,8 @@ padding:0;
   width:30%;
     height: auto;
   background:#22d6cd;
+  font-family: 'Unna';
+  font-size: 14px;
 }
 #sidebar {
   float:right;
