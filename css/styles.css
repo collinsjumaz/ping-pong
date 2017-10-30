@@ -28,13 +28,13 @@ padding:0;
 }
 #main {
   float:left;
-  width:400px;
+  width:20%;
     height: auto;
   background:#22d6cd;
 }
 #sidebar {
   float:right;
-  width:900px;
+  width:80%;
   height: auto;
   background:#89f442;
 }
