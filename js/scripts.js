@@ -42,7 +42,7 @@ $(document).ready(function() {
   $('form#pingpongGame').submit(function(event) {
     var userNumber = $('input#userNumber').val();
 
-    displayResultList(pingPong(userNumber));
+    displayResultList(pingpongGame(userNumber));
 
     event.preventDefault();
   });
