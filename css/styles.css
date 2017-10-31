@@ -28,7 +28,7 @@ padding:0;
 }
 #main {
   float:left;
-  width:30%;
+  width:35%;
     height: auto;
   background:#22d6cd;
   font-family: 'Unna';
@@ -36,7 +36,7 @@ padding:0;
 }
 #sidebar {
   float:right;
-  width:70%;
+  width:65%;
   height: auto;
   font-family: fantasy;
   background:#89f442;
