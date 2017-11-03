@@ -1,55 +1,23 @@
-var pingpongGame = function(userNumber) {
-  var numberArray = [];
-  if (userNumber < 0) { //negative numbers
-    for (var index = -1; index >= userNumber; index--) {
-      numberArray.push(index);
-    }
-    numberArray.forEach(function(number) {
-      if (number % 15 === 0) {
-        numberArray[-number-1] = 'pingpongGame';
-      } else if (number % 3 === 0) {
-        numberArray[-number-1] = 'ping';
-      } else if (number % 5 === 0) {
-        numberArray[-number-1] = 'pong';
-      }
-    });
-  } else if (userNumber > 0) { //positive numbers
-      for (var index = 1; index <= userNumber; index++) {
-        numberArray.push(index);
-      }
-      numberArray.forEach(function(number) {
-        if (number % 15 === 0) {
-          numberArray[number-1] = 'pingpong';
-        } else if (number % 3 === 0) {
-          numberArray[number-1] = 'ping';
-        } else if (number % 5 === 0) {
-          numberArray[number-1] = 'pong';
-        }
-      });
-  }
-  return numberArray;
-}
-
-var displayResultList = function(outputArray) {
-    $('ul#result').empty();
-  outputArray.forEach(function(item) {
-    $('ul#result').append('<li>' + item + '</li>');
-  });
-  return;
-}
-
 $(document).ready(function() {
-  $('form#pingpongGame').submit(function(event) {
-    var userNumber = $('input#userNumber').val();
+    $("form#pingpong").submit(function(e){
+         var input = parseInt($("input#userInput").val());
 
-    displayResultList(pingpongGame(userNumber));
+     for (var i = 1; i <= input; i++) {
+       $('ul#result').append('<li>' + pingpong(i) + '</li>');
+     }
+     e.preventDefault();
+ });
 
-    event.preventDefault();
-  });
 });
-/* Demo purposes only */
-$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
+
+function pingpong(number) {
+    if (number % 15 === 0) {
+     return "ping pong";
+ } else if (number % 3 === 0) {
+     return "ping";
+ } else if (number % 5 === 0) {
+     return "pong";
+ } else {
+     return number;
+ }
+}
